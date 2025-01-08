@@ -2,12 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-// Variable to keep track of
-// number of students
 int i = 0;
-
-// Structure to store the student
 struct sinfo {
     char fname[50];
     char lname[50];
