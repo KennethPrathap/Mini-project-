@@ -2,7 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+// Variable to keep track of
+// number of students
 int i = 0;
+
+// Structure to store the student
 struct sinfo {
     char fname[50];
     char lname[50];
@@ -10,7 +15,6 @@ struct sinfo {
     float cgpa;
     int cid[10];
 } st[55];
-
 void add_student()
 {
 
@@ -34,6 +38,7 @@ void add_student()
     }
     i = i + 1;
 }
+
 void find_rl()
 {
     int x;
@@ -65,6 +70,7 @@ void find_rl()
         break;
     }
 }
+
 void find_fn()
 {
     char a[50];
@@ -105,6 +111,7 @@ void find_fn()
                 "The First Name not Found\n");
     }
 }
+
 void find_c()
 {
     int id;
@@ -141,6 +148,7 @@ void find_c()
         }
     }
 }
+
 void tot_s()
 {
     printf("The total number of"
@@ -153,8 +161,6 @@ void tot_s()
            50 - i);
 }
 
-// Function to delete a student
-// by the roll number
 void del_s()
 {
     int a;
@@ -172,6 +178,7 @@ void del_s()
     printf("The Roll Number"
            " is removed Successfully\n");
 }
+
 void up_s()
 {
 
@@ -220,7 +227,6 @@ void up_s()
         }
     }
 }
-
 
 void main()
 
